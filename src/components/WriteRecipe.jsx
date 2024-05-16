@@ -23,7 +23,7 @@ const WriteRecipe = () => {
   const WriteRecipe = async (event) => {
     try {
       event.preventDefault();
-      const apiUrl = `http://192.168.0.10:8000/write?machineNo=${machineInfo.machineNumber}&recipeNo=${machineInfo.recipeNumber}`;
+      const apiUrl = `https://192.168.0.10:8000/write?machineNo=${machineInfo.machineNumber}&recipeNo=${machineInfo.recipeNumber}`;
 
       const response = await fetch(apiUrl);
       if (response.ok) {
